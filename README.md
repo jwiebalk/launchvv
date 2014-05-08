@@ -1,9 +1,10 @@
-launchvv
+launchvv for oVirt 3.4
 ========
 
 Helper app for OS X to launch virt-viewer files from a browser
 
-download zipped application bundle here: http://red.ht/14dmTlb
+download zipped application bundle here: http://red.ht/14dmTlb (this is compiled for RHEV, you can replace the script:
+Applications > Right-click on launchvv > Show Package Contents > Contents > Resources > Scripts > main.scpt
 
 To use:  
   
@@ -15,8 +16,8 @@ Click Console.  When your browser asks what to do with the file, associate it pe
 
 What it actually does:
   
-it reads the vv file received from RHEV  
-extracts the hostname of the RHEV-M server  
+it reads the vv file received from oVirt 3.4 server  
+extracts the hostname of the oVirt 3.4 server   
 checks to see if there is a CA certificate for that host in /tmp  
 if not, it downloads the CA crt  
 Finally it launches remote viewer with the appropriate CA cert and .vv file parameters.  
